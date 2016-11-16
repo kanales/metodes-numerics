@@ -72,7 +72,7 @@ double get_at_degree(int degree, polynomial * p) {
     if (degree > p->degree) {
         perror("Out of range.");
         exit(EXIT_FAILURE);
-    } else return v->items[idx];
+    } else return v->coef[degree];
 }
 
 double p_evaluate(double x, polynomial *p) {/* placeholder */} /* Horner! */
